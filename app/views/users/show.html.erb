@@ -1,0 +1,6 @@
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <% @mtweets.each do |mtweet| %>
+    <%= render partial: "mtweets/mtweet", locals: { mtweet: mtweet } %>
+  <% end %>
+</div>
